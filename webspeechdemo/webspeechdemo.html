@@ -388,17 +388,4 @@ function showButtons(style) {
   copy_info.style.display = 'none';
   email_info.style.display = 'none';
 }
-
-function hasGetUserMedia() {
-    // Note: Opera builds are unprefixed.
-    return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
-        navigator.mozGetUserMedia || navigator.msGetUserMedia);
-}
-
-if (hasGetUserMedia()) {
-   alert('oki');
-} else {
-    alert('getUserMedia() is not supported in your browser');
-}
-hasGetUserMedia()
 </script>
